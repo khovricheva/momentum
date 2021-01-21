@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="shortcut icon"
+      href="https://img.icons8.com/bubbles/50/000000/time-machine.png"
+      type="image/x-icon"
+      sizes="32x32"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Momentum</title>
+  </head>
+  <body>
+    <button id="update-bg-btn" title="Change background image"></button>
+    <div id="weather">
+      <div
+        id="city"
+        title="Weather Forecast"
+        contenteditable="true"
+        spellcheck="false"
+      ></div>
+      <div id="weather-info">
+        <img id="weather-icon" />
+        <div id="temperature"></div>
+        <div id="humidity"></div>
+        <div id="wind"></div>
+        <div id="weather-description"></div>
+      </div>
+    </div>
+    <div id="main">
+      <button id="update-quote-btn" title="Refresh quote"></button>
+      <figure id="quote">
+        <blockquote id="blockquote"></blockquote>
+        <figcaption id="quote-caption"></figcaption>
+      </figure>
+      <time id="time">
+        <span id="time-hour"></span>: <span id="time-min"></span>:
+        <span id="time-sec"></span>
+      </time>
+      <span id="date"></span>
+      <div id="greet">
+        <span id="greeting"></span>
+        <span id="name" contenteditable="true" spellcheck="false"></span>
+      </div>
+      <h2>What Is Your Focus For Today?</h2>
+      <span id="focus" contenteditable="true" spellcheck="false"></span>
+    </div>
+    <div id="popup">
+      <div id="popup-content">
+        <p>Please enter a valid City!</p>
+        <button id="popup-btn">OK</button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
