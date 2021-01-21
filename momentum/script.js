@@ -102,12 +102,7 @@ function getTodayBg() {
 
 //set a background for  current time
 function setBg(hour) {
-  const src = hour;
-  const img = document.createElement('img');
-  img.src = bgArray[src];
-  img.onload = () => {
-    document.body.style.backgroundImage = `url(${img.src})`;
-  };
+  document.body.style.backgroundImage = `url(${bgArray[hour]})`;
 }
 
 // scrolling for backgrounds on today
@@ -115,9 +110,11 @@ function changeBg() {
   if (counter === bgArray.length) counter = 0;
 
   const index = counter % bgArray.length;
-  const imageSrc = bgArray[index];
-
-  document.body.style.backgroundImage = `url(${imageSrc})`;
+  const img = document.createElement('img');
+  img.src = bgArray[index];
+  img.onload = () => {
+    document.body.style.backgroundImage = `url(${img.src})`;
+  };
   counter++;
 }
 
